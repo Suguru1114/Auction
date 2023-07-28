@@ -3,6 +3,7 @@ from django.db import IntegrityError
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
+from django.db import models
 
 from .models import User
 
@@ -61,3 +62,6 @@ def register(request):
         return HttpResponseRedirect(reverse("index"))
     else:
         return render(request, "auctions/register.html")
+
+# to run the page i need ti migrate db first.
+# but need to kniow what data should i need fo rthe project 
