@@ -5,7 +5,8 @@ from django.db import models
 class User(AbstractUser):
     pass
 
-class aucton_listing(models.Models):
+class Aucton_listing(models.Model):
+    item_list = models.CharField(max_length=64)
 
 # auction listing 
 # bids
@@ -14,3 +15,4 @@ class aucton_listing(models.Models):
 
 # i will need to add additional models to this file to represent details about auction listings,
 # bids, comments, and auction categories.  
+# 1;34 many to many 
