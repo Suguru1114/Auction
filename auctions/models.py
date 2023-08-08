@@ -14,4 +14,3 @@ class aucton_listing(models.Models):
 
 # i will need to add additional models to this file to represent details about auction listings,
 # bids, comments, and auction categories.  
-# 49;51
